@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="gus.nick.words.SettingsActivity"
+    android:background="#FF0099CC">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioTime"
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentStart="true"
+        android:text="Time for one word"
+        android:textSize="32dp" />
+
+    <Button
+        android:id="@+id/back"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.50"
+        android:color="#66FF6700"
+        android:elevation="0dp"
+        android:text="Back"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/start"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.50"
+        android:color="#66FF6700"
+        android:elevation="0dp"
+        android:text="Start"
+        android:textSize="25dp" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Difficulty"
+        android:textSize="32dp"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toLeftOf="@+id/start"
+        android:layout_toStartOf="@+id/start" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioTime"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="55dp">
+
+        <RadioButton
+            android:id="@+id/radio_20"
+            android:text="20 sec"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_weight="1"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radio_30"
+            android:text="30 sec"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/radio_40"
+            android:text="40 sec"
+            android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_weight="1" />
+
+        <RadioButton
+        android:id="@+id/radio_50"
+            android:text="50 sec"
+            android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_weight="1"
+         />
+    </RadioGroup>
+    <RadioGroup
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioDiff"
+
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/radio_1"
+            android:text="Easy"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_weight="1"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radio_2"
+            android:text="Medium"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/radio_3"
+            android:text="Hard"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_weight="1" />
+
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/timer"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timer on screen"
+        android:layout_alignBottom="@+id/back"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
